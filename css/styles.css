@@ -115,6 +115,10 @@ img {
   color: var(--contact-link-color);
 }
 
+.site-address {
+  font-style: normal;
+}
+
 .address-link:hover,
 .address-link:focus {
   color: var(--link-hover-focus-color);
@@ -126,7 +130,7 @@ img {
   background-color: var(--hero-background-color);
   padding-top: 188px;
   padding-bottom: 188px;
- }
+}
 .hero-title {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
@@ -164,18 +168,18 @@ img {
 
 /* Section 2 "Advantages" */
 
-.advantages-section{
+.advantages-section {
   padding-bottom: 120px;
   padding-top: 120px;
 }
 
-.advantages-list{
+.advantages-list {
   display: flex;
-  gap:24px;
+  gap: 24px;
 }
 
-.advantages-item{
-  flex-basis: calc((100% - 3 * 24px) / 4)
+.advantages-item {
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 .section-title {
@@ -196,8 +200,10 @@ img {
   color: var(--section-paragraf-color);
 }
 
-/* Section 3 "Work" */
-
+/* Section 3 "Doing" */
+.section-doing {
+  padding-bottom: 120px;
+}
 .title {
   font-size: 36px;
   line-height: 1.11;
@@ -205,16 +211,65 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--section-title-color);
+  margin-bottom: 72px;
+}
+
+.doing-list {
+  display: flex;
+  gap: 24px;
+}
+
+.doing-list-item {
+  flex-basis: calc((100% - 2 * 24px) / 3);
 }
 
 /* Section 4 "Team" */
-
 .section-team {
   background-color: var(--section-team-bg-color);
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
+
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.team-list-item {
+  flex-basis: calc((100% - 3 * 24px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+
 
 .list-item {
   background-color: var(--section-team-item-bg-color);
+}
+
+.descr-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.team-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--section-title-color);
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.team-descr {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--section-paragraf-color);
+  text-align: center;
 }
 
 /* Footer */
