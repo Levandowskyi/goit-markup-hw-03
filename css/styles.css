@@ -359,6 +359,7 @@ img {
 .portfolio-btn:focus {
   color: var(--portfolio-btn-color-hover-focus);
   background-color: var(--portfolio-btn-bg-color-hover-focus);
+  border: 1px solid transparent;
 }
 
 .gallery-list {
@@ -368,7 +369,7 @@ img {
   row-gap: 48px;
 }
 
-.gallery-list li {
+.gallery-item {
   flex-basis: calc((100% - 2 * 24px) / 3);
 }
 
