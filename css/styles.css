@@ -164,12 +164,27 @@ img {
 
 /* Section 2 "Advantages" */
 
+.advantages-section{
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+
+.advantages-list{
+  display: flex;
+  gap:24px;
+}
+
+.advantages-item{
+  flex-basis: calc((100% - 3 * 24px) / 4)
+}
+
 .section-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--section-title-color);
+  margin-bottom: 8px;
 }
 
 .section-descr {
