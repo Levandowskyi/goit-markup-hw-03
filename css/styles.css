@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: var(--background-color);
   color: var(--body-color);
 }
@@ -25,28 +25,77 @@ body {
   --footer-bg-color: #2e2f42;
   --footer-descr-color: #f4f4fd;
   --footer-logo-color: #f4f4fd;
-  --portfolio-btn-color:#4d5ae5;
-  --portfolip-bg-color: #F4F4FD;
-  --portfolio-btn-color-hover-focus:#FFFFFF;
-  --portfolio-btn-bg-color-hover-focus:#404BBF;
+  --portfolio-btn-color: #4d5ae5;
+  --portfolip-bg-color: #f4f4fd;
+  --portfolio-btn-color-hover-focus: #ffffff;
+  --portfolio-btn-bg-color-hover-focus: #404bbf;
 }
 
-.list {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+}
+.container{
+  width: 1158px;
+  padding-left: 156px;
+  padding-right: 156px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .list {
+  list-style: none;
+} */
 
 .link {
   text-decoration: none;
 }
 
+.site-header{
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-right: 156px;
+  padding-left: 156px;
+border: 4px solid red;
+
+}
+
+
+.navigation-list{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+
 .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-web-color);
+  margin-right: 76px;
 }
 
 .header-color {
@@ -54,7 +103,7 @@ body {
 }
 
 .nav-link {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -67,9 +116,17 @@ body {
   color: var(--link-hover-focus-color);
 }
 
-.address {
-  font-style: normal;
+address {
+    font-style: normal;
 }
+
+.address-list{
+  display: flex;
+  align-items: center;
+  }
+
+  
+
 
 .address-link {
   font-size: 16px;
@@ -89,7 +146,7 @@ body {
   background-color: var(--hero-background-color);
 }
 .hero-title {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 56px;
   line-height: 60px;
@@ -100,7 +157,7 @@ body {
 }
 
 .hero-btn {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -126,7 +183,7 @@ body {
 }
 
 .section-descr {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -157,42 +214,70 @@ body {
 
 /* Footer */
 
-.footer {
+.site-footer {
   background-color: var(--footer-bg-color);
+  padding-top: 100px;
+  padding-left: 156px;
+  padding-bottom: 100px;
 }
 
 .footer-descr {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--footer-descr-color);
+  width: 264px;
 }
 
 .footer-logo {
   color: var(--footer-logo-color);
+  
+}
+.site-footer .logo{
+  margin-bottom: 16px;
 }
 
 /* Portfolio */
+.work-list-btn{
+  justify-content: center;
+  display: flex;
+  gap:24px;
+  margin-top: 96px;
 
-.portfolio-btn{
-  font-family: "Roboto", sans-serif;
+}
+
+.portfolio-btn {
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--portfolio-btn-color);
   background-color: var(--portfolip-bg-color);
- cursor: pointer;
+  cursor: pointer;
 }
 
 .portfolio-btn:hover,
-.portfolio-btn:focus{
+.portfolio-btn:focus {
   color: var(--portfolio-btn-color-hover-focus);
   background-color: var(--portfolio-btn-bg-color-hover-focus);
 }
-.portfolio-title{
+
+.gallery-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 72px;
+}
+
+.gallery-list li {
+  flex-basis: calc((100% - 2 * 24px) / 3);
+  }
+
+
+
+.portfolio-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -200,7 +285,7 @@ body {
   color: var(--section-title-color);
 }
 
-.portfolio-descr{
+.portfolio-descr {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
