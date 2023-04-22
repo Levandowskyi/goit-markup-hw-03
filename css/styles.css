@@ -75,9 +75,7 @@ img {
 .header-section {
   display: flex;
   padding: 0 15px;
-  width: 1158px;
-  margin: 0 auto;
-}
+  }
 
 .logo {
   font-family: 'Raleway', sans-serif;
