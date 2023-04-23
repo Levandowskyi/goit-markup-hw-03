@@ -121,6 +121,8 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--contact-link-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .site-address {
