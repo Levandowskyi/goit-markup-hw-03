@@ -76,10 +76,6 @@ img {
 }
 
 .site-header {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  padding-right: 156px;
-  padding-left: 156px;
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -113,14 +109,16 @@ img {
 }
 
 .nav-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--link-color);
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .nav-link:hover,
@@ -129,13 +127,15 @@ img {
 }
 
 .address-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--contact-link-color);
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
+  }
 
 .site-address {
   font-style: normal;
@@ -159,9 +159,9 @@ img {
   padding-top: 188px;
   padding-bottom: 188px;
   text-align: center;
-  }
+}
 
- .hero-title {
+.hero-title {
   display: block;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
@@ -174,7 +174,6 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-
 
 .hero-btn {
   font-family: 'Roboto', sans-serif;
@@ -191,7 +190,7 @@ img {
   border: none;
   border-radius: 4px;
   margin: 0 auto;
- }
+}
 
 .hero-btn:hover,
 .hero-btn:focus {
@@ -365,7 +364,6 @@ img {
   border: 1px solid var(--border-btn);
   border-radius: 4px;
 }
-
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
